@@ -4,3 +4,8 @@
 // que são acumulados em sua carteira. Caso ele ultrapasse 20 pontos sua carteira é apreendida. Esporadicamente, os pontos são zerados. 
 // Implemente em Java uma classe que represente uma carteira. Forneça métodos para criar uma carteira, acrescentar pontos, consultar o saldo de pontos, 
 // zerar a carteira, apreender a carteira, verificar se esta está válida.
+
+public class CarteiraMotorista{
+  String cpf, tipo, data, situacao;
+  int pontos;
+}
