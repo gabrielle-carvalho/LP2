@@ -6,6 +6,36 @@
 // zerar a carteira, apreender a carteira, verificar se esta está válida.
 
 public class CarteiraMotorista{
-  String cpf, tipo, data, situacao;
-  int pontos;
+  String cpf, validade, expedicao, situacao;
+  int numeros, pontos;
+
+  public CarteiraMotorista(int numero, int pontos, String cpf, String tipo, String validade, String expedicao){
+    this.numero=numero;
+    this.cpf=cpf;
+    this.tipo=tipo;
+    this.validade=validade;
+    this.expedicao=expedicao;
+    this.pontos=0;
+    this.situacao="valida";
+  }
+  void addPontos(int qtd){
+    this.pontos+=qtd;
+    //this.setPontos(this.getPontos()+qtd);
+  }
+
+  int saldo(){
+    return this.pontos;
+  }
+  
+  void zerar(){
+    this.pontos=0;
+  }
+
+  void apreener(){
+    if(this.pontos>20){
+      this.situacao="Apreendida";
+    }
+  }
 }
+
+//this.situacao.equals("valida");
