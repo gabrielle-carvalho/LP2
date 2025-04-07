@@ -4,9 +4,9 @@
 // - Construa um método para calcular o preço de venda do livro. Para isso deve ser informado o percentual de lucro da loja a ser aplicado sobre o preço de custo do livro.
 // - Construa um método para imprimir os dados de um livro 
 public class Livros{
-  String nome, autor;
-  float preco, porcento;
-  int edicao, ano;
+  private String nome, autor;
+  private float preco, porcento;
+  private int edicao, ano;
 
   void criarLivro(String nome, String autor, float preco, int edicao, int ano){
     this.nome = nome;
