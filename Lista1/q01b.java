@@ -1,16 +1,8 @@
-
-/**
- * Escreva uma descrição da classe CriarAluno aqui.
- * 
- * @author (seu nome) 
- * @version (um número da versão ou uma data)
- */
 public class CriarAluno
 {
-
         //declarando variáveis (atributos)
-        int matricula, quantdDisciplinas,anoIngresso;
-        String nomeAluno, curso, situacao;
+        private int matricula, quantdDisciplinas,anoIngresso;
+        private String nomeAluno, curso, situacao;
         
         //criando um novo objeto (metodo criaraluno)
         public CriarAluno(int matricula, String nomeAluno, int anoIngresso, String curso){
@@ -23,8 +15,8 @@ public class CriarAluno
         //'anoAtual' não precisou ser declarada antes
         int calculaTempo (int anoAtual){
             int tempoCurso;
-            tempoCurso = anoAtual-this.anoIngresso;
-            return tempoCurso;
+            // tempoCurso = anoAtual-this.anoIngresso;
+            return this.anoAtual-this.anoIngresso;
         }
         void informarDisciplina(int qtd){
             this.quantdDisciplinas = qtd;
