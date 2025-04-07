@@ -6,8 +6,8 @@
 // zerar a carteira, apreender a carteira, verificar se esta está válida.
 
 public class CarteiraMotorista{
-  String cpf, validade, expedicao, situacao;
-  int numeros, pontos;
+  private String cpf, validade, expedicao, situacao;
+  private int numeros, pontos;
 
   public CarteiraMotorista(int numero, int pontos, String cpf, String tipo, String validade, String expedicao){
     this.numero=numero;
