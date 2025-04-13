@@ -10,7 +10,7 @@ public class LojaRoupa{
 
   public LojaRoupa(String nomeFantasia,  String razaoSocial, int numeroCnpj, int digitoCnpj){
     this.nomeFantasia=nomeFantasia;
-    this.nomeSocial=nomeSocial;
+    this.razaoSocial=razaoSocial;
     this.numeroCnpj=numeroCnpj;
     this.digitocnpj=digitoCnpj;
   }
@@ -21,8 +21,12 @@ public class LojaRoupa{
     this.publicoAlvo=publicoAlvo;
   }
 
-  float calcularAluguel(){
+  public float calcularAluguel(){
     return this.area*50;
+  }
+
+  public boolean faturamentoMaior(LojaRoupa lojaDois){
+    return this.faturamento>lojaDois.faturamento);
   }
 
   
