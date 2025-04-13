@@ -36,5 +36,9 @@ public class Medicamento
         perc=produtor.getPercLucro();
         return this.CalcPrecoVenda(perc);
     }
+
+   public float CalcPrecoVenda(float perc){
+      return precoCusto * (1+perc/100);
+   }
     
 }
