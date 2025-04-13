@@ -11,4 +11,8 @@ public class Fabricante
         this. endereco=endereco;
         this.perLucro=perLucro;
     }
+
+    public float getPercLucro(){
+        return perLucro;
+    }
 }
