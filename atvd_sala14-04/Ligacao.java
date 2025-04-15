@@ -14,7 +14,8 @@ public class Ligacao
     }
     
     private int valorLigacao(Tempo total){
-        return total;
+        int val=total*1;
+        return  val;
     }
     
     
