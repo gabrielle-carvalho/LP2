@@ -1,21 +1,13 @@
 
 public class Tempo
 {
-    int hora, minuto, segundo;
+    int horaInicio, minutoInicio, segundoInicio;
     
     public Tempo()
     {
         
     }
-    int conversao(int hora, int minuto, int segundo){
-        int total = hora*60+minuto;
-        if(segundo>0){
-            total+=1;
-        }
-        return total;
-    }
-    int calcDif(int inicio, int fim){
-        int diferenca=fim-minuto;
-        return diferenca;
+    int conversaoParaSegundo(int hora, int minuto, int segundo){
+        return this.hora()*60*60 + this.minuto()*60 + this.segundo();
     }
 }
