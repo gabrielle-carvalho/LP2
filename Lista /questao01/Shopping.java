@@ -1,3 +1,4 @@
+
 import java.util.ArrayList;
 public class Shopping{
   private String nome;
@@ -18,13 +19,21 @@ public class Shopping{
     return this.shop;
   }
 
-  public String maiotFat(){
+  public void setNome(String nome){
+    this.nome=nome;
+  }
+
+  public void setShop(String ArrayList<Loja> shop){
+    this.shop=shop;
+  }
+
+  public String maiorFat(){
     float maior=0;
-    String nomeFantasia;
+    String nomeFantasia = "";
     for(Loja loj:shop)
       if(maior<loj.getFaturamento())
         maior=loj.getFaturamento();
-        nomeFantasia = loja.getNomeFantasia();
+        nomeFantasia = loj.getNomeFantasia();
     return nomeFantasia;
   }
 
@@ -34,11 +43,9 @@ public class Shopping{
     for(Loja loj:shop)
       // if (loj.getFaturamento()>1000)
       if (loj.verificarFat()>1000)
-        soma+=loj.getFaturamento;
+        soma+=loj.getFaturamento();
         i++;
     return soma/i;
   }
-
-  
   
 }
