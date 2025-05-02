@@ -1,40 +1,25 @@
+public class Tempo {
+    private int hora, minuto, segundo;
 
-public class Tempo
-{
-    int horaInicio, minutoInicio, segundoInicio;
-    
     public Tempo(int hora, int minuto, int segundo) {
-        this.horaInicio = hora;
-        this.minutoInicio = minuto;
-        this.segundoInicio = segundo;
+        this.hora = hora;
+        this.minuto = minuto;
+        this.segundo = segundo;
     }
 
-    public int getHoraInicio() {
-        return horaInicio;
+    public int getHora() {
+        return hora;
     }
 
-    public int getMinutoInicio() {
-        return minutoInicio;
+    public int getMinuto() {
+        return minuto;
     }
 
-    public int getSegundoInicio() {
-        return segundoInicio;
+    public int getSegundo() {
+        return segundo;
     }
 
-    public void setHoraInicio(int horaInicio) {
-        this.horaInicio = horaInicio;
-    }
-
-    public void setMinutoInicio(int minutoInicio) {
-        this.minutoInicio = minutoInicio;
-    }
-
-    public void setSegundoInicio(int segundoInicio) {
-        this.segundoInicio = segundoInicio;
-    }
-
-    
-    public int conversaoParaSegundo(int hora, int minuto, int segundo){
-        return (horaInicio*60*60) + (minutoInicio*60) + segundoInicio;
+    public int conversaoParaSegundo() {
+        return hora * 60*60 + minuto * 60 + segundo;
     }
 }
