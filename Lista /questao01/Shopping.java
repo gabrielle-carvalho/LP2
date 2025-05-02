@@ -23,28 +23,32 @@ public class Shopping{
     this.nome=nome;
   }
 
-  public void setShop(String ArrayList<Loja> shop){
+  public void setShop(ArrayList<Loja> shop){
     this.shop=shop;
   }
 
   public String maiorFat(){
     float maior=0;
     String nomeFantasia = "";
-    for(Loja loj:shop)
-      if(maior<loj.getFaturamento())
+    for(Loja loj:shop){
+      if(maior<loj.getFaturamento()){
         maior=loj.getFaturamento();
         nomeFantasia = loj.getNomeFantasia();
+    }
+  }
     return nomeFantasia;
   }
 
   public float fatMedio(){
     float soma=0;
     int i=0;
-    for(Loja loj:shop)
+    for(Loja loj:shop){
       // if (loj.getFaturamento()>1000)
-      if (loj.verificarFat()>1000)
+      if (loj.verificarFat(1000)){
         soma+=loj.getFaturamento();
         i++;
+      }
+    }
     return soma/i;
   }
   
