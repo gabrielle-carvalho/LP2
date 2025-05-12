@@ -1,8 +1,11 @@
 public class ProdutoPerecivel extends Produto{
-  protect String validade, formaArmazenamento;
+  
+  protected String validade, formaArmazenamento;
+  
   public ProdutoPerecivel(String codigo, String nome, float precoCusto, String substancia){
     super(codigo, nome, precoCusto);
-    this(validade, formaArmazenamento);
+    this.validade=validade;
+    this.formaArmazenamento=formaArmazenamento;
   }
   public String getValidade() {
         return validade;
