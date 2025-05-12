@@ -1,5 +1,6 @@
 public class Sala{
-  protect int numeroSala, capacidade;
+  protected int numeroSala, capacidade;
+  
   public Sala(int numeroSala, int capacidade){
     this.numeroSala = numeroSala;
     this.capacidade = capacidade;
