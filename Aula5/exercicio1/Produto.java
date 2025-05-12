@@ -32,6 +32,6 @@ public class Produto{
   }
 
   public float precoVenda(){
-    return precoVenda*1.3f;
+    return this.precoCusto*1.3f;
   }
 }
