@@ -1,6 +1,7 @@
 public class Produto{
-  protect String codigo, nome;
-  protect float precoCusto;
+  protected String codigo, nome;
+  protected float precoCusto;
+  
   public Produto(String codigo, String nome, float precoCusto){
     this.codigo=codigo;
     this.nome=nome;
