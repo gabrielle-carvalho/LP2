@@ -1,15 +1,15 @@
 public class AutomovelPasseio extends Automovel{
-    protected int passageiros;
-    public AutomovelPasseio(String placa, String anoFabricacao, int passageiros){
+    protected int qtdPessoas;
+    public AutomovelPasseio(String placa, String anoFabricacao, int qtdPessoas){
         super(placa, anoFabricacao);
-        this(passageiros);
+        this(qtdPessoas);
     }
 
-    public float getPassageiros() {
-        return passageiros;
+    public float getQtdPessoas() {
+        return qtdPessoas;
   }
   
-  public void setPassageiros(float passageiros) {
-      this.passageiros = passageiros;
+  public void setQtdPessoas(float qtdPessoas) {
+      this.qtdPessoas = qtdPessoas;
   }
 }
