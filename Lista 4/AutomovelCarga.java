@@ -7,9 +7,14 @@ public class AutomovelCarga extends Automovel{
 
     public float getPeso() {
         return peso;
-  }
+    }
   
-  public void setPeso(float peso) {
+    public void setPeso(float peso) {
       this.peso = peso;
-  }
+    }
+    
+    public float passagem(){
+       return this.peso*2;
+    }
+
 }
