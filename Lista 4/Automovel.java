@@ -16,6 +16,11 @@ public class Automovel{
         return 5;
     }
 
+    public int qtdPassagem(){
+        return this.minhasPassagens.size();
+    }
+
+
     public void setPlaca(String placa){
         this.plca=placa;
     }
