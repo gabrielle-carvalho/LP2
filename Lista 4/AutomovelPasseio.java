@@ -7,9 +7,13 @@ public class AutomovelPasseio extends Automovel{
 
     public float getQtdPessoas() {
         return qtdPessoas;
-  }
-  
-  public void setQtdPessoas(float qtdPessoas) {
+    }
+    
+    public void setQtdPessoas(float qtdPessoas) {
       this.qtdPessoas = qtdPessoas;
-  }
+    }
+    
+    public float passagem(){
+        return this.qtdPessoas*5;
+    }
 }
