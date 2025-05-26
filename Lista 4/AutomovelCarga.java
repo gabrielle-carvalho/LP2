@@ -1,6 +1,6 @@
-public class Carga extends Automovel{
+public class AutomovelCarga extends Automovel{
     protected float pesoMaximo;
-    public Carga(String placa, String anoFabricacao, float pesoMaximo){
+    public AutomovelCarga(String placa, String anoFabricacao, float pesoMaximo){
         super(placa, anoFabricacao);
         this(pesoMaximo);
     }
