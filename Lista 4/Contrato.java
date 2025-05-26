@@ -9,4 +9,11 @@ public class Contrato{
   public void addAuto(Automovel auto){
     this.meusAutos.add(auto);
   }
+  public float fatura(){
+    float total=0;
+    for(Automovel auto : meusAutos){
+      total += auto.passagem()*auto.qtdPassagens();
+    }
+    return total;
+    }
 }
