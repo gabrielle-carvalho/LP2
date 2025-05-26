@@ -12,6 +12,10 @@ public class Automovel{
         this.minhasPassagens.add(pass);
     }
 
+    public float passagem(){
+        return 5;
+    }
+
     public void setPlaca(String placa){
         this.plca=placa;
     }
