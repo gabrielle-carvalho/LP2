@@ -1,6 +1,6 @@
-public class Passeio extends Automovel{
+public class AutomovelPasseio extends Automovel{
     protected int passageiros;
-    public Passeio(String placa, String anoFabricacao, int passageiros){
+    public AutomovelPasseio(String placa, String anoFabricacao, int passageiros){
         super(placa, anoFabricacao);
         this(passageiros);
     }
