@@ -1,6 +1,6 @@
-public class Pequeno extends Automovel{
+public class AutomovelPequeno extends Automovel{
     protected String modelo;
-    public Pequeno(String placa, String anoFabricacao, String modelo){
+    public AutomovelPequeno(String placa, String anoFabricacao, String modelo){
         super(placa, anoFabricacao);
         this(modelo);
     }
