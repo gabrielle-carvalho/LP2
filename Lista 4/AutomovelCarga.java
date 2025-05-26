@@ -1,15 +1,15 @@
 public class AutomovelCarga extends Automovel{
-    protected float pesoMaximo;
-    public AutomovelCarga(String placa, String anoFabricacao, float pesoMaximo){
+    protected float peso;
+    public AutomovelCarga(String placa, String anoFabricacao, float peso){
         super(placa, anoFabricacao);
-        this(pesoMaximo);
+        this(peso);
     }
 
-    public float getPesoMaximo() {
-        return pesoMaximo;
+    public float getPeso() {
+        return peso;
   }
   
-  public void setPesoMaximo(float pesoMaximo) {
-      this.pesoMaximo = pesoMaximo;
+  public void setPeso(float peso) {
+      this.peso = peso;
   }
 }
