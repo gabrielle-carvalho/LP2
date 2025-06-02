@@ -1,44 +1,38 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- */
+abstract class Seguro {
+    private String beneficiario;
+    private float valorApolice;
 
-/**
- *
- * @author 072410142
- */
-public class Seguro {
-
-    /**
-     * @return the beneficiario
-     */
+    public Seguro(String beneficiario, float valorApolice) {
+        this.beneficiario = beneficiario;
+        this.valorApolice = valorApolice;
+    }
+    
     public String getBeneficiario() {
         return beneficiario;
     }
 
-    /**
-     * @param beneficiario the beneficiario to set
-     */
     public void setBeneficiario(String beneficiario) {
         this.beneficiario = beneficiario;
     }
 
-    /**
-     * @return the valorApolice
-     */
     public float getValorApolice() {
         return valorApolice;
     }
 
-    /**
-     * @param valorApolice the valorApolice to set
-     */
     public void setValorApolice(float valorApolice) {
         this.valorApolice = valorApolice;
     }
-    private String beneficiario;
-    private float valorApolice;
-
+    
+    public abstract float calcValor();
+    
+    public interface print implements {
+        void imprimir();
+        void gerarPdf;
+    }
+    
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        SegResidencial s1;
+        s1 = new SegResidencial("jese", 10000, "rua das flores", 2020);
+        System.out.println("o valor é: " + s1.calcValor());
     }
 }

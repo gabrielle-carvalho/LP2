@@ -1,12 +1,7 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+public class SegResidencial extends Seguro implements print{
 
-/**
- *
- * @author 072410142
- */
-public class SegResidencial {
-    
+    SegResidencial(String nome, int valorApolice, String endereco, int ano) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+        
 }
