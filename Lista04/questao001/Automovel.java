@@ -1,3 +1,5 @@
+import java.util.*;
+
 public class Automovel{
     protected String placa, anoFabricacao;
     protected ArrayList<Passagem> minhasPassagens;
@@ -5,7 +7,7 @@ public class Automovel{
     public Automovel (String placa, String anoFabricacao){
         this.placa=placa;
         this.anoFabricacao=anoFabricacao;
-        this.minhasPassagens = new ArrayList<Passagem>;
+        this.minhasPassagens = new ArrayList<Passagem>();
     }
 
     public void addPassagem (Passagem pass){
@@ -22,7 +24,7 @@ public class Automovel{
 
 
     public void setPlaca(String placa){
-        this.plca=placa;
+        this.placa=placa;
     }
 
     public void setAnoFabricacao(String anoFabricacao){

@@ -1,4 +1,4 @@
-public class Medicamento
+public class MedicamentoSlide
 {
    private String nome, principioAtivo;
    private float precoCusto;

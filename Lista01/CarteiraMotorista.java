@@ -31,7 +31,7 @@ public class CarteiraMotorista{
     this.pontos=0;
   }
 
-  void apreener(){
+  void apreender(){
     if(this.pontos>20){
       this.situacao="Apreendida";
     }

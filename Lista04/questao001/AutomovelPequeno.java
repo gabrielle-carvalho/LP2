@@ -2,7 +2,7 @@ public class AutomovelPequeno extends Automovel{
     protected String modelo;
     public AutomovelPequeno(String placa, String anoFabricacao, String modelo){
         super(placa, anoFabricacao);
-        this(modelo);
+        this.modelo=modelo;
     }
 
     public String getModelo() {

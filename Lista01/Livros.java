@@ -3,6 +3,7 @@
 // - método para criar um livro com todos os seus dados.
 // - Construa um método para calcular o preço de venda do livro. Para isso deve ser informado o percentual de lucro da loja a ser aplicado sobre o preço de custo do livro.
 // - Construa um método para imprimir os dados de um livro 
+// QUESTAO 2
 public class Livros{
   private String nome, autor;
   private float preco, porcento;

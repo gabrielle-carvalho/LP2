@@ -2,7 +2,7 @@ public class AutomovelCarga extends Automovel{
     protected float peso;
     public AutomovelCarga(String placa, String anoFabricacao, float peso){
         super(placa, anoFabricacao);
-        this(peso);
+        this.peso=peso;
     }
 
     public float getPeso() {
@@ -13,7 +13,7 @@ public class AutomovelCarga extends Automovel{
       this.peso = peso;
     }
     
-    public float passagem(){
+    public float Passagem(){
        return this.peso*2;
     }
 
